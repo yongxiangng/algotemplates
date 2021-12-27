@@ -33,10 +33,12 @@ int main() {
         }
     }
 
+    int sccCnt = 0;
     int maxSize = 0;
     dfs_num.assign(n, -1);
     for (int i=n-1;i>=0;i--) {
         if (dfs_num[S[i]] == -1) {
+            ++sccCnt;
             int size = 0;
             Kosaraju(S[i], 2, size, dfs_num, al, alt);
             maxSize = max(maxSize, size);
