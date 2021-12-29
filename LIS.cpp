@@ -23,7 +23,7 @@ void print_LIS(int i, vi &A, vi &p) {                             // backtrackin
 }
 
 int LIS(vi &arr) {
-    int n = 12;
+    int n = arr.size();
     vi p;
 
     int k = 0, lis_end = 0;
