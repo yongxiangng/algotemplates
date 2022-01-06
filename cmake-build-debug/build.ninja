@@ -168,6 +168,12 @@ build CMakeFiles/algorithms_template.dir/subsets.cpp.o: CXX_COMPILER__algorithms
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
+build CMakeFiles/algorithms_template.dir/misc/leap_year.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/misc/leap_year.cpp || cmake_object_order_depends_target_algorithms_template
+  DEP_FILE = CMakeFiles/algorithms_template.dir/misc/leap_year.cpp.o.d
+  FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles/algorithms_template.dir
+  OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir/misc
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target algorithms_template
@@ -176,7 +182,7 @@ build CMakeFiles/algorithms_template.dir/subsets.cpp.o: CXX_COMPILER__algorithms
 #############################################
 # Link the executable algorithms_template
 
-build algorithms_template: CXX_EXECUTABLE_LINKER__algorithms_template_Debug CMakeFiles/algorithms_template.dir/LIS.cpp.o CMakeFiles/algorithms_template.dir/choose.cpp.o CMakeFiles/algorithms_template.dir/TSP.cpp.o CMakeFiles/algorithms_template.dir/articulation_and_bridges.cpp.o CMakeFiles/algorithms_template.dir/kosaraju.cpp.o CMakeFiles/algorithms_template.dir/prim.cpp.o CMakeFiles/algorithms_template.dir/prim2.cpp.o CMakeFiles/algorithms_template.dir/modifieddijkstras.cpp.o CMakeFiles/algorithms_template.dir/originaldijkstras.cpp.o CMakeFiles/algorithms_template.dir/NT/sieve_of_eratosthenes.cpp.o CMakeFiles/algorithms_template.dir/string/KMP.cpp.o CMakeFiles/algorithms_template.dir/UFDS.cpp.o CMakeFiles/algorithms_template.dir/Gaussian.cpp.o CMakeFiles/algorithms_template.dir/NT/modular_arithmetic.cpp.o CMakeFiles/algorithms_template.dir/sliding_window.cpp.o CMakeFiles/algorithms_template.dir/subsets.cpp.o
+build algorithms_template: CXX_EXECUTABLE_LINKER__algorithms_template_Debug CMakeFiles/algorithms_template.dir/LIS.cpp.o CMakeFiles/algorithms_template.dir/choose.cpp.o CMakeFiles/algorithms_template.dir/TSP.cpp.o CMakeFiles/algorithms_template.dir/articulation_and_bridges.cpp.o CMakeFiles/algorithms_template.dir/kosaraju.cpp.o CMakeFiles/algorithms_template.dir/prim.cpp.o CMakeFiles/algorithms_template.dir/prim2.cpp.o CMakeFiles/algorithms_template.dir/modifieddijkstras.cpp.o CMakeFiles/algorithms_template.dir/originaldijkstras.cpp.o CMakeFiles/algorithms_template.dir/NT/sieve_of_eratosthenes.cpp.o CMakeFiles/algorithms_template.dir/string/KMP.cpp.o CMakeFiles/algorithms_template.dir/UFDS.cpp.o CMakeFiles/algorithms_template.dir/Gaussian.cpp.o CMakeFiles/algorithms_template.dir/NT/modular_arithmetic.cpp.o CMakeFiles/algorithms_template.dir/sliding_window.cpp.o CMakeFiles/algorithms_template.dir/subsets.cpp.o CMakeFiles/algorithms_template.dir/misc/leap_year.cpp.o
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   POST_BUILD = :
