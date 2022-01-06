@@ -31,6 +31,8 @@ int LIS(vi &arr) {
     p.assign(n, -1);
 
     for (int i = 0; i < n; ++i) {                    // O(n)
+        // use lower_bound if you want strictly increasing
+        // use upper_bound if you want non strictly increasing
         int pos = lower_bound(L.begin(), L.begin()+k, arr[i]) - L.begin();
         L[pos] = arr[i];                             // greedily overwrite this
         L_id[pos] = i;                               // remember the index too
