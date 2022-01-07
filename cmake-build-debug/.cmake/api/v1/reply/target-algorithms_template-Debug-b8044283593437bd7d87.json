@@ -68,7 +68,9 @@
 				13,
 				14,
 				15,
-				16
+				16,
+				17,
+				18
 			]
 		}
 	],
@@ -117,7 +119,9 @@
 				13,
 				14,
 				15,
-				16
+				16,
+				17,
+				18
 			]
 		}
 	],
@@ -223,6 +227,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "misc/leap_year.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flows/dinics.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "flows/baseball_elimination_variant.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
