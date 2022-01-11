@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/ngyongxiang/Desktop/cpp/algorithms_template/cmake-build-debug/
+cmake_ninja_workdir = /media/ngyongxiang/C977-9850/algorithms_template/cmake-build-debug/
 
 #############################################
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ngyongxiang/Desktop/cpp/algorithms_template/cmake-build-debug && /snap/clion/178/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ngyongxiang/Desktop/cpp/algorithms_template -B/home/ngyongxiang/Desktop/cpp/algorithms_template/cmake-build-debug
+  COMMAND = cd /media/ngyongxiang/C977-9850/algorithms_template/cmake-build-debug && /snap/clion/178/bin/cmake/linux/bin/cmake --regenerate-during-build -S/media/ngyongxiang/C977-9850/algorithms_template -B/media/ngyongxiang/C977-9850/algorithms_template/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ngyongxiang/Desktop/cpp/algorithms_template/cmake-build-debug && /snap/clion/178/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /media/ngyongxiang/C977-9850/algorithms_template/cmake-build-debug && /snap/clion/178/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -72,125 +72,137 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 
 build cmake_object_order_depends_target_algorithms_template: phony || CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/LIS.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/LIS.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/LIS.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/LIS.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/LIS.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/choose.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/choose.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/choose.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/choose.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/choose.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/TSP.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/TSP.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/TSP.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/TSP.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/TSP.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/articulation_and_bridges.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/articulation_and_bridges.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/articulation_and_bridges.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/articulation_and_bridges.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/articulation_and_bridges.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/kosaraju.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/kosaraju.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/kosaraju.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/kosaraju.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/kosaraju.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/prim.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/prim.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/prim.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/prim.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/prim.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/prim2.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/prim2.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/prim2.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/prim2.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/prim2.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/modifieddijkstras.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/modifieddijkstras.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/modifieddijkstras.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/modifieddijkstras.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/modifieddijkstras.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/originaldijkstras.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/originaldijkstras.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/originaldijkstras.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/originaldijkstras.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/originaldijkstras.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/NT/sieve_of_eratosthenes.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/NT/sieve_of_eratosthenes.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/NT/sieve_of_eratosthenes.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/NT/sieve_of_eratosthenes.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/NT/sieve_of_eratosthenes.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir/NT
 
-build CMakeFiles/algorithms_template.dir/string/KMP.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/string/KMP.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/string/KMP.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/string/KMP.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/string/KMP.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir/string
 
-build CMakeFiles/algorithms_template.dir/UFDS.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/UFDS.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/UFDS.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/UFDS.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/UFDS.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/Gaussian.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/Gaussian.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/Gaussian.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/Gaussian.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/Gaussian.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/NT/modular_arithmetic.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/NT/modular_arithmetic.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/NT/modular_arithmetic.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/NT/modular_arithmetic.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/NT/modular_arithmetic.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir/NT
 
-build CMakeFiles/algorithms_template.dir/sliding_window.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/sliding_window.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/sliding_window.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/sliding_window.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/sliding_window.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/subsets.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/subsets.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/subsets.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/subsets.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/subsets.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
-build CMakeFiles/algorithms_template.dir/misc/leap_year.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/misc/leap_year.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/misc/leap_year.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/misc/leap_year.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/misc/leap_year.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir/misc
 
-build CMakeFiles/algorithms_template.dir/flows/dinics.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/flows/dinics.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/flows/dinics.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/flows/dinics.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/flows/dinics.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir/flows
 
-build CMakeFiles/algorithms_template.dir/flows/baseball_elimination_variant.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/flows/baseball_elimination_variant.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/flows/baseball_elimination_variant.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/flows/baseball_elimination_variant.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/flows/baseball_elimination_variant.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir/flows
 
-build CMakeFiles/algorithms_template.dir/geometry/lat_long_dist.cpp.o: CXX_COMPILER__algorithms_template_Debug /home/ngyongxiang/Desktop/cpp/algorithms_template/geometry/lat_long_dist.cpp || cmake_object_order_depends_target_algorithms_template
+build CMakeFiles/algorithms_template.dir/geometry/lat_long_dist.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/geometry/lat_long_dist.cpp || cmake_object_order_depends_target_algorithms_template
   DEP_FILE = CMakeFiles/algorithms_template.dir/geometry/lat_long_dist.cpp.o.d
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir/geometry
+
+build CMakeFiles/algorithms_template.dir/shunting_yard.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/shunting_yard.cpp || cmake_object_order_depends_target_algorithms_template
+  DEP_FILE = CMakeFiles/algorithms_template.dir/shunting_yard.cpp.o.d
+  FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles/algorithms_template.dir
+  OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
+
+build CMakeFiles/algorithms_template.dir/kadane.cpp.o: CXX_COMPILER__algorithms_template_Debug /media/ngyongxiang/C977-9850/algorithms_template/kadane.cpp || cmake_object_order_depends_target_algorithms_template
+  DEP_FILE = CMakeFiles/algorithms_template.dir/kadane.cpp.o.d
+  FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles/algorithms_template.dir
+  OBJECT_FILE_DIR = CMakeFiles/algorithms_template.dir
 
 
 # =============================================================================
@@ -200,7 +212,7 @@ build CMakeFiles/algorithms_template.dir/geometry/lat_long_dist.cpp.o: CXX_COMPI
 #############################################
 # Link the executable algorithms_template
 
-build algorithms_template: CXX_EXECUTABLE_LINKER__algorithms_template_Debug CMakeFiles/algorithms_template.dir/LIS.cpp.o CMakeFiles/algorithms_template.dir/choose.cpp.o CMakeFiles/algorithms_template.dir/TSP.cpp.o CMakeFiles/algorithms_template.dir/articulation_and_bridges.cpp.o CMakeFiles/algorithms_template.dir/kosaraju.cpp.o CMakeFiles/algorithms_template.dir/prim.cpp.o CMakeFiles/algorithms_template.dir/prim2.cpp.o CMakeFiles/algorithms_template.dir/modifieddijkstras.cpp.o CMakeFiles/algorithms_template.dir/originaldijkstras.cpp.o CMakeFiles/algorithms_template.dir/NT/sieve_of_eratosthenes.cpp.o CMakeFiles/algorithms_template.dir/string/KMP.cpp.o CMakeFiles/algorithms_template.dir/UFDS.cpp.o CMakeFiles/algorithms_template.dir/Gaussian.cpp.o CMakeFiles/algorithms_template.dir/NT/modular_arithmetic.cpp.o CMakeFiles/algorithms_template.dir/sliding_window.cpp.o CMakeFiles/algorithms_template.dir/subsets.cpp.o CMakeFiles/algorithms_template.dir/misc/leap_year.cpp.o CMakeFiles/algorithms_template.dir/flows/dinics.cpp.o CMakeFiles/algorithms_template.dir/flows/baseball_elimination_variant.cpp.o CMakeFiles/algorithms_template.dir/geometry/lat_long_dist.cpp.o
+build algorithms_template: CXX_EXECUTABLE_LINKER__algorithms_template_Debug CMakeFiles/algorithms_template.dir/LIS.cpp.o CMakeFiles/algorithms_template.dir/choose.cpp.o CMakeFiles/algorithms_template.dir/TSP.cpp.o CMakeFiles/algorithms_template.dir/articulation_and_bridges.cpp.o CMakeFiles/algorithms_template.dir/kosaraju.cpp.o CMakeFiles/algorithms_template.dir/prim.cpp.o CMakeFiles/algorithms_template.dir/prim2.cpp.o CMakeFiles/algorithms_template.dir/modifieddijkstras.cpp.o CMakeFiles/algorithms_template.dir/originaldijkstras.cpp.o CMakeFiles/algorithms_template.dir/NT/sieve_of_eratosthenes.cpp.o CMakeFiles/algorithms_template.dir/string/KMP.cpp.o CMakeFiles/algorithms_template.dir/UFDS.cpp.o CMakeFiles/algorithms_template.dir/Gaussian.cpp.o CMakeFiles/algorithms_template.dir/NT/modular_arithmetic.cpp.o CMakeFiles/algorithms_template.dir/sliding_window.cpp.o CMakeFiles/algorithms_template.dir/subsets.cpp.o CMakeFiles/algorithms_template.dir/misc/leap_year.cpp.o CMakeFiles/algorithms_template.dir/flows/dinics.cpp.o CMakeFiles/algorithms_template.dir/flows/baseball_elimination_variant.cpp.o CMakeFiles/algorithms_template.dir/geometry/lat_long_dist.cpp.o CMakeFiles/algorithms_template.dir/shunting_yard.cpp.o CMakeFiles/algorithms_template.dir/kadane.cpp.o
   FLAGS = -g -D_GLIBCXX_DEBUG -fsanitize=address -fsanitize=undefined -g
   OBJECT_DIR = CMakeFiles/algorithms_template.dir
   POST_BUILD = :
@@ -217,7 +229,7 @@ build algorithms_template: CXX_EXECUTABLE_LINKER__algorithms_template_Debug CMak
 # =============================================================================
 
 #############################################
-# Folder: /home/ngyongxiang/Desktop/cpp/algorithms_template/cmake-build-debug
+# Folder: /media/ngyongxiang/C977-9850/algorithms_template/cmake-build-debug
 
 build all: phony algorithms_template
 

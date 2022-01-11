@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ngyongxiang/Desktop/cpp/algorithms_template/cmake-build-debug"
+			"value" : "/media/ngyongxiang/C977-9850/algorithms_template/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -579,7 +579,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ngyongxiang/Desktop/cpp/algorithms_template"
+			"value" : "/media/ngyongxiang/C977-9850/algorithms_template"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ngyongxiang/Desktop/cpp/algorithms_template/cmake-build-debug"
+			"value" : "/media/ngyongxiang/C977-9850/algorithms_template/cmake-build-debug"
 		},
 		{
 			"name" : "algorithms_template_IS_TOP_LEVEL",
@@ -1135,7 +1135,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ngyongxiang/Desktop/cpp/algorithms_template"
+			"value" : "/media/ngyongxiang/C977-9850/algorithms_template"
 		}
 	],
 	"kind" : "cache",

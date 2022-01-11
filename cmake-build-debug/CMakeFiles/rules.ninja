@@ -42,7 +42,7 @@ rule CXX_EXECUTABLE_LINKER__algorithms_template_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /snap/clion/178/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/ngyongxiang/Desktop/cpp/algorithms_template -B/home/ngyongxiang/Desktop/cpp/algorithms_template/cmake-build-debug
+  command = /snap/clion/178/bin/cmake/linux/bin/cmake --regenerate-during-build -S/media/ngyongxiang/C977-9850/algorithms_template -B/media/ngyongxiang/C977-9850/algorithms_template/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
