@@ -353,6 +353,8 @@ struct pair_hash {
 
 /**
  * https://open.kattis.com/problems/settlers2
+ * 
+ * CP4 book 2, pg 276
  */
 int main() {
     ios::sync_with_stdio(false);
