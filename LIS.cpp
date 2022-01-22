@@ -16,6 +16,9 @@ typedef tree<ii,null_type,less<>,rb_tree_tag,tree_order_statistics_node_update> 
 typedef tree<int,null_type,less_equal<>,rb_tree_tag,tree_order_statistics_node_update> ordered_multiset;
 const double EPS = 1e-9;
 
+// https://open.kattis.com/problems/microrow
+// https://www.geeksforgeeks.org/minimum-number-of-increasing-subsequences/
+// Minimum number of increasing subsequences equals to the length of longest decreasing subsequence (non decreasing i think actually...)
 void print_LIS(int i, vi &A, vi &p) {                             // backtracking routine
     if (p[i] == -1) { printf("%d", A[i]); return; } // base case
     print_LIS(p[i], A, p);                                  // backtrack
