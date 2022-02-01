@@ -77,8 +77,9 @@ public:
     if (u == v) return;                          // safeguard: no self loop
     EL.emplace_back(v, w, 0, c);                    // u->v, cap w, flow 0
     AL[u].push_back(EL.size()-1);                // remember this index
-    EL.emplace_back(u, directed ? 0 : w, 0, -c);     // back edge
+    EL.emplace_back(u, 0, 0, -c);     // back edge
     AL[v].push_back(EL.size()-1);                // remember this index
+    if (!directed) add_edge(v, u, w, c);
   }
 
   pair<ll, ll> mcmf(int s, int t) {
