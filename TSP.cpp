@@ -48,7 +48,7 @@ int TSP(int u, int mask, vector<vector<int>> &dist, vector<vector<int>> &memo) {
     int m = mask;
     while (m) {                                                                         // up to O(n)
         int two_pow_v = LSOne(m);                                                       // but this is fast
-        int v = __builtin_ctz(two_pow_v) + 1;                                           // offset v by + 1
+        int v = __builtin_ctz(two_pow_v) + 1;                                           // offset v by + 1 !!! note the possible bug here, confusing because n * 2 ^ (n - 1) runtime
         ans = min(ans, dist[u][v] + TSP(v, mask^two_pow_v, dist, memo));       // keep the min
         m -= two_pow_v;
     }
