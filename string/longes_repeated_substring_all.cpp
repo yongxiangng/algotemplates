@@ -669,61 +669,80 @@ int directions[4][2] = {{1,0},{0,1},{-1,0},{0,-1}};
 const int p = 131;
 const int M = 1e9+7;
 
-bool possible(string &s, int len, vector<ll> &Pow) {
+bool possible(vector<string> &arr, int len, vector<ll> &Pow) {
     if (len == 0) return true;
-    int n = s.size();
-    ll hash = 0;
-    unordered_map<int, int> firstHash;
-    for (int i=0;i<len-1;i++) {
-        hash *= p;
-        hash += (int) s[i];
-        hash %= M;
-    }
+    unordered_map<int, ii> firstHash;
+    unordered_map<int, int> hashFreq;
+    for (int i=0;i<arr.size();i++) {
+        string &s = arr[i];
+        unordered_set<int> thisHash;
+        int n = s.size();
+        ll hash = 0;
+        for (int j=0;j<len-1;j++) {
+            hash *= p;
+            hash += (int) s[j];
+            hash %= M;
+        }
 
-    for (int i=len-1;i<n;i++) {
-        hash *= p;
-        hash += (int) s[i];
-        hash %= M;
-        if (firstHash.count(hash) == 0) firstHash[hash] = i;
-        if (i - firstHash[hash] >= len) return true; // first hash was len occ ago
-        hash -= (((ll) s[i-(len-1)] * Pow[len-1]) % M);
-        hash += M;
-        hash %= M;
+        for (int j=len-1;j<n;j++) {
+            hash *= p;
+            hash += (int) s[j];
+            hash %= M;
+            if (firstHash.count(hash) == 0) firstHash[hash] = {i, j-len+1};
+            thisHash.insert(hash);
+            hash -= (((ll) s[j-(len-1)] * Pow[len-1]) % M);
+            hash += M;
+            hash %= M;
+        }
+
+        for (auto &h : thisHash) {
+            hashFreq[h]++;
+        }
+    }
+    for (auto &[k, v] : hashFreq) {
+        if (v == arr.size()) return true;
     }
     return false;
 }
 
-void printSolutions(string &s, int len, vector<ll> &Pow) {
+void printSolutions(vector<string> &arr, int len, vector<ll> &Pow) {
     if (len == 0) return;
-    int n = s.size();
-    ll hash = 0;
-    unordered_map<int, int> firstHash;
-    unordered_set<int> answers;
-    for (int i=0;i<len-1;i++) {
-        hash *= p;
-        hash += (int) s[i];
-        hash %= M;
-    }
-
-    for (int i=len-1;i<n;i++) {
-        hash *= p;
-        hash += (int) s[i];
-        hash %= M;
-        if (firstHash.count(hash) == 0) firstHash[hash] = i;
-        if (i - firstHash[hash] >= len) {
-            answers.insert(hash);
+    unordered_map<int, ii> firstHash;
+    unordered_map<int, int> hashFreq;
+    for (int i=0;i<arr.size();i++) {
+        string &s = arr[i];
+        unordered_set<int> thisHash;
+        int n = s.size();
+        ll hash = 0;
+        for (int j=0;j<len-1;j++) {
+            hash *= p;
+            hash += (int) s[j];
+            hash %= M;
         }
-        hash -= (((ll) s[i-(len-1)] * Pow[len-1]) % M);
-        hash += M;
-        hash %= M;
-    }
 
-    for (auto &a : answers) {
-        int idx = firstHash[a]-len+1;
-        for (int i=0;i<len;i++) {
-            cout << s[idx + i];
+        for (int j=len-1;j<n;j++) {
+            hash *= p;
+            hash += (int) s[j];
+            hash %= M;
+            if (firstHash.count(hash) == 0) firstHash[hash] = {i, j};
+            thisHash.insert(hash);
+            hash -= (((ll) s[j-(len-1)] * Pow[len-1]) % M);
+            hash += M;
+            hash %= M;
         }
-        cout << endl;
+
+        for (auto &h : thisHash) {
+            hashFreq[h]++;
+        }
+    }
+    for (auto &[k, v] : hashFreq) {
+        if (v == arr.size()) {
+            ii pos = firstHash[k];
+            for (int i=0;i<len;i++) {
+                cout << arr[pos.first][pos.second - len + 1 + i];
+            }
+            cout << endl;
+        }
     }
 }
 
@@ -734,25 +753,35 @@ int main() {
     int tc;
     cin >> tc >> ws;
     while (tc--) {
-        string s; getline(cin, s);
-        int n = s.size();
-        vector<ll> Pow(n);
+        int strCnt; cin >> strCnt >> ws;
+        vector<string> arr(strCnt);
+        int minN = MAX;
+
+        for (auto &a : arr) {
+            getline(cin, a);
+            minN = min(minN, (int) a.size());
+        }
+
+        vector<ll> Pow(minN);
         Pow[0] = 1;
-        for (int i=1;i<n;i++) {
+        for (int i=1;i<minN;i++) {
             Pow[i] = ((ll) Pow[i-1] * p) % M;
         }
+
         int lo = 0;
-        int hi = n;
+        int hi = minN + 1;
+
         while (lo < hi) {
             int mid = lo + (hi - lo) / 2;
-            if (possible(s, mid, Pow)) {
+            if (possible(arr, mid, Pow)) {
                 lo = mid + 1;
             } else {
                 hi = mid;
             }
         }
+
         cout << lo - 1 << endl;
-        printSolutions(s, lo - 1, Pow);
+        printSolutions(arr, lo - 1, Pow);
     }
     return 0;
 }
